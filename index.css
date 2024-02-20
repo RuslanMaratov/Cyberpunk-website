@@ -1,0 +1,949 @@
+/* General css */
+.generalList ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.white {
+  color: white;
+}
+
+.generalList ul + ul {
+  margin-top: 10px;
+}
+
+.generalList svg {
+  width: 30px;
+  height: 30px;
+}
+
+.wrapper {
+  width: 100%;
+}
+/* Header */
+.header__container {
+  height: 100%;
+  padding: 0 150px;
+  display: grid;
+  grid-template-rows: 20% 40%;
+  gap: 40%;
+}
+
+.header {
+  background-image: url("./images/mainImg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.header__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 30%;
+}
+
+.header__socialNetworks {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.5s ease;
+}
+
+.header__socialNetworks svg:hover {
+  transform: scale(1.1);
+}
+
+.header__socialNetworks svg {
+  width: 40px;
+  height: 40px;
+}
+
+.header__content {
+  width: 40%;
+  background-color: #f8f200;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  clip-path: polygon(
+    0% 20%,
+    /* верхняя левая */ 10% 0%,
+    /* верхняя левая */ 100% 0%,
+    /* верхняя правая */ 100% 0%,
+    /* верхняя правая */ 100% 80%,
+    /* нижняя правая */ 90% 100%,
+    /* нижняя правая */ 0% 100%,
+    /* нижняя левая */ 0 96% /* нижняя левая */
+  );
+}
+
+.header__content h3 {
+  line-height: 63px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.header__link {
+  border: none;
+  background-color: black;
+  color: #f8f200;
+  padding: 20px 30px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.header__link:hover {
+  border: none;
+  background-color: grey;
+}
+
+/* GameInfo */
+.gameInfo {
+  padding: 30px 150px;
+}
+
+.gameInfo__container {
+  width: 100%;
+}
+
+.gameInfo__title {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.gameInfo__text {
+  font-size: 25px;
+  line-height: 34px;
+  color: #777777;
+  padding: 20px 0;
+}
+
+.gameInfo__text a {
+  color: #52bedc;
+  cursor: pointer;
+}
+
+.gameInfo__images {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 38% 56%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gameInfo__images-two {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gameInfo__images-one {
+  width: 100%;
+  height: 100%;
+}
+
+.gameInfo__images-two img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45%;
+}
+
+.gameInfo__images-one img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Sale */
+.sale {
+  background-image: url("./images/blackBack.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+}
+
+.sale__intro {
+  width: 100%;
+  -webkit-user-drag: none;
+}
+
+.sale__container {
+  padding: 0 150px;
+}
+
+.sale__title {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 700;
+  color: white;
+  margin-top: 10px;
+}
+
+.sale__title svg {
+  width: 132px;
+  height: 132px;
+}
+
+.sale__text {
+  font-size: 25px;
+  line-height: 34px;
+  color: #777777;
+  padding: 20px 0;
+  width: 80%;
+}
+
+.sale__text a {
+  color: #52bedc;
+  text-decoration: none;
+}
+
+.sale__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sale__input {
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: black;
+  color: #777777;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.sale__input:focus::placeholder {
+  color: transparent;
+}
+
+.inputLabel {
+  color: #777777;
+  border: 1px dashed white;
+  width: 50%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.inputLabel p {
+  text-decoration: underline;
+}
+
+.inputLabel span {
+  text-decoration: none;
+}
+
+.fileInput {
+  display: none;
+}
+
+.inputSubmit {
+  border: none;
+  width: 20%;
+  height: 50px;
+  background-color: #f8f200;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.inputSubmit:hover {
+  background-color: grey;
+}
+
+/* monitorInfo */
+.monitorInfo {
+  background-image: url("./images/yellowBack.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.monitorInfo__intro {
+  width: 100%;
+  -webkit-user-drag: none;
+}
+
+.monitorInfo__container {
+  height: 550px;
+  padding: 50px 150px;
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 6%;
+}
+
+.monitorInfo__images {
+  width: 100%;
+  height: inherit;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.monitorImg {
+  width: 100%;
+}
+
+.monitorInfo__images-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.monitorInfo__text {
+  height: inherit;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.monitorInfo__text h1 {
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.monitorInfo__text p:first-of-type {
+  margin-bottom: 10px;
+}
+
+.monitorInfo__link {
+  text-decoration: none;
+  background-color: black;
+  color: #f8f200;
+  padding: 15px 40px;
+  margin-top: 10px;
+  display: block;
+  width: fit-content;
+  transition: all 0.5s ease;
+}
+
+.monitorInfo__link:hover {
+  background-color: grey;
+}
+
+/* Buy */
+.buy {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.buyImg {
+  width: 100%;
+  height: 100%;
+  -webkit-user-drag: none;
+}
+
+.buy__content {
+  padding: 50px 150px 50px 20px;
+  background-color: black;
+}
+
+.buy__content h1 {
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 700;
+  color: white;
+}
+
+.buy__content p {
+  color: #52bedc;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.platforms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.platforms img {
+  height: 30px;
+  -webkit-user-drag: none;
+}
+
+/* Footer */
+.footer {
+  background-color: white;
+}
+
+.footer__container {
+  padding: 0 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+.footer__link a + a {
+  margin-left: 30px;
+}
+
+.footer__link a:hover {
+  color: #52bedc;
+}
+
+.footer p {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  /* Стили для десктопов */
+
+  .header__content h3 {
+    line-height: 45px;
+    font-size: 45px;
+  }
+
+  .header__link {
+    padding: 15px 25px;
+    font-size: 20px;
+  }
+
+  .header__container {
+    padding: 0 80px;
+  }
+
+  .gameInfo {
+    padding: 30px 80px;
+  }
+
+  .sale__container {
+    padding: 0 80px;
+  }
+
+  .monitorInfo__images-logos {
+    flex-direction: column;
+  }
+
+  .monitorInfo__text h1 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .monitorImg {
+    margin-bottom: 15px;
+  }
+
+  .monitorInfo__container {
+    padding: 50px 80px;
+    height: 580px;
+  }
+
+  .buy__content {
+    padding: 50px 80px 50px 20px;
+  }
+
+  .buy__content h1 {
+    font-size: 40px;
+    line-height: 38px;
+  }
+
+  .buy__content p {
+    font-size: 20px;
+  }
+
+  .footer__container {
+    padding: 0px 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Стили для планшетов */
+  .generalList ul + ul {
+    margin-top: 5px;
+  }
+
+  .header__content h3 {
+    line-height: 32px;
+    font-size: 30px;
+  }
+
+  .header__link {
+    padding: 15px 25px;
+    font-size: 20px;
+  }
+
+  .header__container {
+    padding: 0 50px;
+  }
+
+  .header__socialNetworks svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .gameInfo {
+    padding: 30px 50px;
+  }
+
+  .gameInfo__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .monitorImg {
+    margin-bottom: 15px;
+  }
+
+  .monitorInfo__container {
+    padding: 50px 30px;
+    height: 600px;
+  }
+
+  .monitorInfo__images-logos {
+    flex-direction: column;
+  }
+
+  .monitorInfo__link {
+    padding: 10px 15px;
+    margin-top: 5px;
+  }
+
+  .monitorInfo__text h1 {
+    font-size: 35px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .sale__container {
+    padding: 0 50px;
+  }
+
+  .sale__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .buy__content {
+    padding: 50px 50px 50px 20px;
+  }
+
+  .buy__content h1 {
+    font-size: 35px;
+    line-height: 30px;
+  }
+
+  .buy__content p {
+    font-size: 20px;
+  }
+
+  .footer__container {
+    padding: 0px 50px;
+  }
+
+  .footer__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__link a + a {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  /* Стили для мобильных устройств */
+  .generalList ul + ul {
+    margin-top: 5px;
+  }
+
+  .generalList {
+    font-size: 14px;
+  }
+
+  .generalList svg {
+    display: none;
+  }
+
+  .header__container {
+    grid-template-rows: 10% 30%;
+    gap: 60%;
+    padding: 0 50px;
+  }
+
+  .header__content {
+    gap: 10px;
+    clip-path: none;
+  }
+
+  .header__content h3 {
+    line-height: 24px;
+    font-size: 20px;
+  }
+
+  .header__link {
+    padding: 2px 10px;
+    font-size: 15px;
+  }
+
+  .header__socialNetworks svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .gameInfo {
+    padding: 30px 50px;
+  }
+
+  .gameInfo__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .gameInfo__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .monitorImg {
+    width: 180px;
+  }
+
+  .monitorInfo__container {
+    padding: 30px 0px;
+    height: 500px;
+    justify-items: center;
+    grid-template-columns: 50% 48%;
+    gap: 2%;
+  }
+
+  .monitorInfo__images-logos {
+    flex-direction: column;
+  }
+
+  .monitorInfo__images-logos img {
+    width: 100px;
+  }
+
+  .monitorInfo__link {
+    padding: 10px 15px;
+    margin-top: 5px;
+  }
+
+  .monitorInfo__text h1 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .monitorInfo__text p:first-of-type {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .monitorInfo__text {
+    line-height: 24px;
+  }
+
+  .monitorInfo__images {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .sale__container {
+    padding: 0 30px;
+  }
+
+  .sale__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .sale__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .inputSubmit {
+    width: 25%;
+    font-size: 14px;
+  }
+
+  .buy {
+    overflow: hidden;
+    height: 400px;
+  }
+
+  .buy__content {
+    padding: 30px 0px 30px 10px;
+  }
+
+  .buyImg {
+    width: auto;
+    -webkit-user-drag: none;
+  }
+
+  .buy__content h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .buy__content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .platforms img {
+    height: 15px;
+  }
+
+  .footer__container {
+    padding: 0;
+    display: block;
+  }
+
+  .footer__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer__link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .footer__link a + a {
+    margin-left: 0;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  /* Стили для мобильных устройств */
+  .generalList ul + ul {
+    margin-top: 5px;
+  }
+
+  .generalList {
+    font-size: 14px;
+  }
+
+  .generalList svg {
+    display: none;
+  }
+
+  .header__container {
+    grid-template-rows: 10% 30%;
+    gap: 60%;
+    padding: 0 15px;
+  }
+
+  .header__content {
+    gap: 10px;
+    clip-path: none;
+  }
+
+  .header__content h3 {
+    line-height: 24px;
+    font-size: 20px;
+  }
+
+  .header__link {
+    padding: 2px 10px;
+    font-size: 15px;
+  }
+
+  .header__socialNetworks svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .gameInfo {
+    padding: 30px 15px;
+  }
+
+  .gameInfo__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .gameInfo__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .monitorImg {
+    width: 180px;
+  }
+
+  .monitorInfo__container {
+    padding: 30px 0px;
+    height: 550px;
+    justify-items: center;
+    grid-template-columns: 50% 48%;
+    gap: 2%;
+  }
+
+  .monitorInfo__images-logos {
+    flex-direction: column;
+  }
+
+  .monitorInfo__images-logos img {
+    width: 100px;
+  }
+
+  .monitorInfo__link {
+    padding: 10px 15px;
+    margin-top: 5px;
+  }
+
+  .monitorInfo__text h1 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .monitorInfo__text p:first-of-type {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .monitorInfo__text {
+    line-height: 24px;
+  }
+
+  .monitorInfo__images {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .sale__container {
+    padding: 0 15px;
+  }
+
+  .sale__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .sale__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .inputSubmit {
+    width: 25%;
+    font-size: 14px;
+  }
+
+  .buy {
+    overflow: hidden;
+    height: 400px;
+  }
+
+  .buy__content {
+    padding: 30px 0px 30px 10px;
+  }
+
+  .buyImg {
+    width: auto;
+    -webkit-user-drag: none;
+  }
+
+  .buy__content h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .buy__content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .platforms img {
+    height: 15px;
+  }
+
+  .footer__container {
+    padding: 0;
+    display: block;
+  }
+
+  .footer__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer__link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .footer__link a + a {
+    margin-left: 0;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
+}
